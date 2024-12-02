@@ -9,7 +9,23 @@ package org.uob.a2.gameobjects;
  * are initially hidden or visible to the player.
  * </p>
  */
+
 public class Container extends Feature {
+    private String id,name,description;
+    private boolean hidden;
+    {
+        super(id, name, description, hidden);
+
+    }
+
+
+/*
+    public Container(String id,String name,String description) {
+        this.id=id;
+        this.name=name;
+        this.description=description;
+    }
+*/
 
     
     /**

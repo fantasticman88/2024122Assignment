@@ -9,6 +9,10 @@ package org.uob.a2.gameobjects;
  * </p>
  */
 public abstract class GameObject {
+    public String id;
+    public String name;
+    public boolean hidden;
+    public String description;
    
     /**
      * Returns a string representation of the game object, including its ID, name,

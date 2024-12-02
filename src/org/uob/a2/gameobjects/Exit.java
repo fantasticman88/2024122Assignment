@@ -9,7 +9,12 @@ package org.uob.a2.gameobjects;
  */
 public class Exit extends GameObject {
 
-   
+    private String nextRoom;
+
+    public Exit(String id, String name, String description, String nextRoom, boolean hidden) {
+        super(id, name, description, hidden);
+        this.nextRoom = nextRoom;
+    }
 
     /**
      * Returns a string representation of the exit, including attributes inherited from {@code GameObject}
@@ -17,6 +22,12 @@ public class Exit extends GameObject {
      *
      * @return a string describing the exit
      */
+
+    public String getNextRoom() {
+        return this.nextRoom;
+    }
+
+
     @Override
     public String toString() {
         return super.toString() + ", nextRoom=" + nextRoom;
